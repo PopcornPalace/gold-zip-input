@@ -78,7 +78,7 @@ style this element.
           prevent-invalid-input
           maxlength="10"
           bind-value="{{value}}"
-          autocomplete="postal-code"
+          autocomplete="[[autocomplete]]"
           name$="[[name]]"
           disabled$="[[disabled]]"
           invalid="{{invalid}}"
@@ -113,6 +113,10 @@ style this element.
           label: {
             type: String,
             value: "Zip Code"
+          },
+          autocomplete: {
+            type: String,
+            value: 'postal-code'
           }
         },
 
